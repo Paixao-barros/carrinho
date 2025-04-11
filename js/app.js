@@ -32,14 +32,14 @@ function adicionar() {
   listaDeProdutos.innerHTML = `
     <section class="carrinho__produtos__produto">
       <span class="texto-azul">${qtde}x</span> ${nomeProduto} 
-      <span class="texto-azul">R$${total.toFixed(2)}</span>
+      <span class="texto-azul">R$${total.toLocaleString('pt-BR', {minimumIntegerDigits: 2})}</span>
     </section>
   `;
   // Variavel total
  const totalResultado = document.querySelector(".carrinho__total");
  totalResultado.innerHTML = `
    <p class="carrinho__total">
-     Total: <span class="texto-azul" id="valor-total">R$${total.toFixed(2)}</span>
+     Total: <span class="texto-azul" id="valor-total">R$${total.toLocaleString('pt-BR', {minimumIntegerDigits: 2})}</span>
    </p>
  `;
 }
