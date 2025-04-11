@@ -51,5 +51,5 @@ function limpar() {
   document.getElementById('valor-total').textContent = 'R$0.00';
 }
 
-
+console.log(limpar);
 
